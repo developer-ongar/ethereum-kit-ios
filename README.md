@@ -192,7 +192,7 @@ uniswapKit
 
 Some smart contracts store some information concerning your address, which you can't retrieve in a standard way over RPC. If you have an external API to get them from, you can create a custom syncer and add it to EthereumKit. It will sync all the transactions your syncer gives. 
 
-[Erc20TransactionSyncer](https://github.com/horizontalsystems/ethereum-kit-ios/blob/master/Erc20Kit/Classes/Core/Erc20TransactionSyncer.swift) is a good example of this. It gets token transfer transactions from Etherscan and feeds EthereumKit syncer with them. It is added to EthereumKit as following:
+Erc20TransactionSyncer is a good example of this. It gets token transfer transactions from Etherscan and feeds EthereumKit syncer with them. It is added to EthereumKit as following:
 ```swift
 let transactionSyncer = Erc20TransactionSyncer(...)
 ethereumKit.add(syncer: transactionSyncer)
@@ -241,24 +241,10 @@ $ pod install
 ```
 
 
-## Example Project
-
-All features of the library are used in example project. It can be referred as a starting point for usage of the library.
-
-* [Example Project](https://github.com/horizontalsystems/ethereum-kit-ios/tree/master/Example)
-
 ## Dependencies
 
-* [HSHDWalletKit](https://github.com/horizontalsystems/hd-wallet-kit-ios) - HD Wallet related features, mnemonic phrase generation.
-* [OpenSslKit.swift](https://github.com/horizontalsystems/open-ssl-kit-ios) - Crypto functions required for working with blockchain.
-* [Secp256k1Kit.swift](https://github.com/horizontalsystems/secp256k1-kit-ios) - Crypto functions required for working with blockchain. 
-* [HsToolKit.swift](https://github.com/horizontalsystems/hs-tool-kit-ios) - Helpers library from HorizontalSystems
-* RxSwift
 * BigInt
 * GRDB.swift
 * Starscream
 
-## License
-
-The `EthereumKit-iOS` toolkit is open source and available under the terms of the [MIT License](https://github.com/horizontalsystems/ethereum-kit-ios/blob/master/LICENSE).
 
