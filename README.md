@@ -36,8 +36,6 @@ Supports following settings:
 - Recipient
 - Fee on Transfer
 
-## Usage
-
 
 ### Initialization
 
